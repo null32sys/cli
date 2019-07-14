@@ -157,7 +157,7 @@ func ValidateOutputPathFileMode(fileMode os.FileMode) error {
 	case fileMode&os.ModeDevice != 0:
 		return errors.New("got a device")
 //	case fileMode&os.ModeIrregular != 0:
-		return errors.New("got an irregular file")
+//		return errors.New("got an irregular file")
 	}
 	return nil
 }
